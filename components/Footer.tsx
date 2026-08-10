@@ -55,6 +55,7 @@ export default function Footer() {
 
         <div className="mt-14 flex flex-col items-start justify-between gap-4 border-t border-parchment/15 pt-6 font-body text-xs text-parchment/50 sm:flex-row sm:items-center">
           <p>&copy; {new Date().getFullYear()} {company.name}. All rights reserved.</p>
+          <p className="font-mono">Est. {company.founded} &middot; {company.hq}</p>
           <p className="font-mono">FARM &rarr; PROCESS &rarr; STORE &rarr; MARKET</p>
         </div>
       </div>

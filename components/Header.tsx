@@ -5,6 +5,7 @@ import { useState } from "react";
 import { company } from "@/lib/content";
 
 const NAV = [
+  { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/operations", label: "Operations" },
   { href: "/training", label: "Training" },
@@ -20,10 +21,10 @@ export default function Header() {
     <header className="sticky top-0 z-40 border-b border-soil/10 bg-parchment/95 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <span className="flex h-9 w-9 items-center justify-center rounded-full border-2 border-ink font-display text-sm font-bold text-ink">
+          <span className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-ink font-display text-base font-bold text-ink">
             RG
           </span>
-          <span className="font-display text-lg font-bold tracking-tight text-ink">
+          <span className="font-display text-2xl font-bold tracking-tight text-ink">
             {company.name}
           </span>
         </Link>

@@ -6,12 +6,8 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="grain-bg relative overflow-hidden bg-soil px-6 pb-20 pt-16 text-parchment md:pb-28 md:pt-24">
+      <section className="grain-bg relative overflow-hidden bg-soil px-6 pb-20 pt-8 text-parchment md:pb-28 md:pt-16">
         <div className="mx-auto max-w-5xl">
-          <div className="stamp inline-flex items-center gap-2 px-4 py-1.5 font-mono text-[11px] uppercase tracking-widest text-gold">
-            Est. {company.founded} &middot; {company.hq}
-          </div>
-
           <h1 className="mt-6 max-w-3xl font-display text-5xl font-bold leading-[1.03] md:text-7xl">
             From soil to shelf,
             <br />
