@@ -47,20 +47,7 @@ export default function SustainabilityPage() {
       />
 
       {/* Hero Image */}
-      <section className="px-6 py-16 md:py-24">
-        <div className="mx-auto max-w-6xl">
-          <div className="relative h-80 overflow-hidden rounded-2xl border border-gold/20 shadow-lg">
-            <Image
-              src="/sustainability.jpg"
-              alt="Sustainable green farm landscape"
-              fill
-              className="object-cover"
-              priority
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-leaf/40 to-transparent" />
-          </div>
-        </div>
-      </section>
+      
 
       {/* Commitments */}
       <section className="px-6 py-16 md:py-24">
