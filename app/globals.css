@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  background-color: #F1EEDF;
+  color: #211A12;
+}
+
+::selection {
+  background-color: #D9A441;
+  color: #211A12;
+}
+
+/* Visible keyboard focus everywhere, styled instead of suppressed */
+:focus-visible {
+  outline: 2px solid #9C4221;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.stamp {
+  border: 1.5px solid currentColor;
+  border-radius: 9999px;
+}
+
+.grain-bg {
+  background-image: radial-gradient(circle at 1px 1px, rgba(241,238,223,0.09) 1px, transparent 0);
+  background-size: 20px 20px;
+}
