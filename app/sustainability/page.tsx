@@ -43,6 +43,7 @@ export default function SustainabilityPage() {
         eyebrow="Sustainability"
         title="Resilient systems, not just higher yields."
         intro="We believe agriculture is more than food production — it's a catalyst for industrialisation, job creation and wealth generation, built to last."
+        image="/sustainability.jpg"
       />
 
       {/* Hero Image */}

@@ -15,6 +15,7 @@ export default function AboutPage() {
         eyebrow="About Us"
         title="Built for Nigeria's agricultural transformation."
         intro={`Established in ${company.founded}, ${company.name} is a leading Nigerian agro-allied enterprise headquartered in ${company.hq}, committed to advancing sustainable agriculture through integrated farming, agro-processing, innovation and human capital development.`}
+        image="/livestock.jpg"
       />
 
       <section className="px-6 py-16 md:py-24">
