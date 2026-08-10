@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { company, advantages } from "@/lib/content";
 import ValueChain from "@/components/ValueChain";
+import FarmHero from "@/components/FarmHero";
 
 export default function Home() {
   return (
@@ -8,33 +9,43 @@ export default function Home() {
       {/* Hero */}
       <section className="grain-bg relative overflow-hidden bg-leaf px-6 pb-20 pt-8 text-parchment md:pb-28 md:pt-16">
         <div className="mx-auto max-w-5xl">
-          <h1 className="max-w-3xl font-display text-5xl font-bold leading-[1.03] md:text-7xl">
-            From soil to shelf,
-            <br />
-            <span className="text-gold-light">one integrated enterprise.</span>
-          </h1>
+          <div className="mb-10 flex flex-col gap-8 lg:flex-row lg:items-center lg:gap-12">
+            {/* Text */}
+            <div className="flex-1">
+              <h1 className="max-w-2xl font-display text-5xl font-bold leading-[1.03] md:text-6xl">
+                From soil to shelf,
+                <br />
+                <span className="text-gold-light">one integrated enterprise.</span>
+              </h1>
 
-          <p className="mt-6 max-w-xl font-body text-lg leading-relaxed text-parchment/70 md:text-xl">
-            {company.name} runs the full agricultural value chain &mdash;
-            livestock, aquaculture, cassava processing, cold storage and
-            farmer training &mdash; under one roof in {company.hq}.
-          </p>
+              <p className="mt-6 max-w-xl font-body text-lg leading-relaxed text-parchment/70 md:text-xl">
+                {company.name} runs the full agricultural value chain &mdash;
+                livestock, aquaculture, cassava processing, cold storage and
+                farmer training &mdash; under one roof in {company.hq}.
+              </p>
 
-          <div className="mt-9 flex flex-wrap items-center gap-4">
-            <Link
-              href="/operations"
-              className="rounded-full bg-gold px-6 py-3 font-body text-sm font-semibold text-ink transition-colors hover:bg-gold-light"
-            >
-              See our operations
-            </Link>
-            <a
-              href={`https://wa.me/${company.phoneIntl}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-full border border-gold px-6 py-3 font-body text-sm font-semibold text-parchment transition-colors hover:bg-gold hover:text-ink"
-            >
-              Chat on WhatsApp
-            </a>
+              <div className="mt-9 flex flex-wrap items-center gap-4">
+                <Link
+                  href="/operations"
+                  className="rounded-full bg-gold px-6 py-3 font-body text-sm font-semibold text-ink transition-colors hover:bg-gold-light"
+                >
+                  See our operations
+                </Link>
+                <a
+                  href={`https://wa.me/${company.phoneIntl}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-full border border-gold px-6 py-3 font-body text-sm font-semibold text-parchment transition-colors hover:bg-gold hover:text-ink"
+                >
+                  Chat on WhatsApp
+                </a>
+              </div>
+            </div>
+
+            {/* Image */}
+            <div className="flex-1">
+              <FarmHero />
+            </div>
           </div>
         </div>
       </section>

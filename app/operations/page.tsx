@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
+import OperationsGallery from "@/components/OperationsGallery";
 import { operations, stageOrder, stageLabel } from "@/lib/content";
 
 export const metadata: Metadata = {
@@ -17,6 +18,20 @@ export default function OperationsPage() {
         intro="Each business line is built to feed the next — from the inputs we raise ourselves through to the training that grows the next generation of agripreneurs."
       />
 
+      {/* Gallery */}
+      <section className="px-6 py-16 md:py-24">
+        <div className="mx-auto max-w-6xl">
+          <p className="font-mono text-xs uppercase tracking-widest text-gold">Visual Overview</p>
+          <h2 className="mt-3 max-w-2xl font-display text-3xl font-bold leading-tight text-ink md:text-4xl">
+            Our diverse agricultural operations.
+          </h2>
+          <div className="mt-12">
+            <OperationsGallery />
+          </div>
+        </div>
+      </section>
+
+      {/* Detailed Operations */}
       <section className="px-6 py-16 md:py-24">
         <div className="mx-auto max-w-6xl space-y-16">
           {stageOrder.map((stage, i) => {
