@@ -47,10 +47,10 @@ export default function TrainingPage() {
 
       <section className="px-6 py-16 md:py-24">
         <div className="mx-auto max-w-6xl">
-          <p className="font-mono text-xs uppercase tracking-widest text-clay">Who we train</p>
+          <p className="font-mono text-xs uppercase tracking-widest text-gold">Who we train</p>
           <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {AUDIENCES.map((a) => (
-              <div key={a.title} className="rounded-2xl border border-ink/10 p-6">
+              <div key={a.title} className="rounded-2xl border border-gold/20 p-6">
                 <h3 className="font-display text-lg font-semibold text-ink">{a.title}</h3>
                 <p className="mt-2 font-body text-sm leading-relaxed text-ink/70">{a.detail}</p>
               </div>
@@ -59,7 +59,7 @@ export default function TrainingPage() {
         </div>
       </section>
 
-      <section className="border-t border-ink/10 bg-soil px-6 py-16 text-parchment md:py-24">
+      <section className="border-t border-gold/20 bg-soil px-6 py-16 text-parchment md:py-24">
         <div className="mx-auto max-w-6xl grid gap-10 md:grid-cols-[1fr_1.2fr]">
           <div>
             <p className="font-mono text-xs uppercase tracking-widest text-gold">Focus areas</p>
@@ -79,7 +79,7 @@ export default function TrainingPage() {
       </section>
 
       <section className="px-6 py-16 md:py-24">
-        <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-6 rounded-2xl border border-ink/10 p-10 md:flex-row md:items-center">
+        <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-6 rounded-2xl border border-gold/20 p-10 md:flex-row md:items-center">
           <div>
             <h2 className="font-display text-2xl font-bold text-ink">
               Interested in a training cohort or partnership?
@@ -95,13 +95,13 @@ export default function TrainingPage() {
               )}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-leaf px-6 py-3 font-body text-sm font-semibold text-parchment hover:bg-leaf-dark"
+              className="rounded-full bg-leaf px-6 py-3 font-body text-sm font-semibold text-parchment hover:bg-leaf"
             >
               Chat on WhatsApp
             </a>
             <Link
               href="/contact"
-              className="rounded-full border border-ink/20 px-6 py-3 font-body text-sm font-semibold text-ink hover:border-clay hover:text-clay"
+              className="rounded-full border border-ink/20 px-6 py-3 font-body text-sm font-semibold text-ink hover:border-clay hover:text-gold"
             >
               Contact page
             </Link>

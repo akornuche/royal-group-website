@@ -21,18 +21,18 @@ html {
 }
 
 body {
-  background-color: #F1EEDF;
-  color: #211A12;
+  background-color: #F8F6F0;
+  color: #0A0A0A;
 }
 
 ::selection {
-  background-color: #D9A441;
-  color: #211A12;
+  background-color: #D4AF37;
+  color: #0A0A0A;
 }
 
-/* Visible keyboard focus everywhere, styled instead of suppressed */
+/* Visible keyboard focus everywhere */
 :focus-visible {
-  outline: 2px solid #9C4221;
+  outline: 2px solid #D4AF37;
   outline-offset: 3px;
   border-radius: 2px;
 }
@@ -43,6 +43,6 @@ body {
 }
 
 .grain-bg {
-  background-image: radial-gradient(circle at 1px 1px, rgba(241,238,223,0.09) 1px, transparent 0);
+  background-image: radial-gradient(circle at 1px 1px, rgba(212,175,55,0.08) 1px, transparent 0);
   background-size: 20px 20px;
 }

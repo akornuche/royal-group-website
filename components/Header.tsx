@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { company } from "@/lib/content";
 
@@ -18,37 +19,46 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-soil/10 bg-parchment/95 backdrop-blur">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+    <header className="sticky top-0 z-40 border-b border-gold/20 bg-ink/95 backdrop-blur">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
+
+        {/* Logo */}
         <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <span className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-ink font-display text-base font-bold text-ink">
-            RG
-          </span>
-          <span className="font-display text-2xl font-bold tracking-tight text-ink">
+          <Image
+            src="/logo.jpeg"
+            alt="Royal Group logo"
+            width={48}
+            height={48}
+            className="rounded-full object-cover ring-2 ring-gold/60"
+            priority
+          />
+          <span className="font-display text-2xl font-bold tracking-tight text-parchment">
             {company.name}
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-8 md:flex">
+        {/* Desktop Nav */}
+        <nav className="hidden items-center gap-6 md:flex">
           {NAV.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="font-body text-sm font-medium text-ink/80 transition-colors hover:text-clay"
+              className="font-body text-sm font-medium text-parchment/80 transition-colors hover:text-gold"
             >
               {item.label}
             </Link>
           ))}
           <a
             href={`tel:+${company.phoneIntl}`}
-            className="rounded-full bg-ink px-4 py-2 font-body text-sm font-semibold text-parchment transition-colors hover:bg-clay"
+            className="rounded-full bg-gold px-4 py-2 font-body text-sm font-semibold text-ink transition-colors hover:bg-gold-light"
           >
             {company.phoneDisplay}
           </a>
         </nav>
 
+        {/* Mobile Menu Button */}
         <button
-          className="flex h-10 w-10 items-center justify-center rounded-full border border-ink/20 md:hidden"
+          className="flex h-10 w-10 items-center justify-center rounded-full border border-gold/30 text-parchment md:hidden"
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
@@ -66,14 +76,15 @@ export default function Header() {
         </button>
       </div>
 
+      {/* Mobile Menu */}
       {open && (
-        <nav className="border-t border-soil/10 bg-parchment px-6 pb-6 pt-2 md:hidden">
+        <nav className="border-t border-gold/20 bg-ink px-6 pb-6 pt-2 md:hidden">
           <ul className="flex flex-col gap-1">
             {NAV.map((item) => (
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className="block rounded-lg px-2 py-3 font-body text-base font-medium text-ink/80 hover:bg-soil/5 hover:text-clay"
+                  className="block rounded-lg px-2 py-3 font-body text-base font-medium text-parchment/80 hover:bg-gold/10 hover:text-gold"
                   onClick={() => setOpen(false)}
                 >
                   {item.label}
@@ -83,7 +94,7 @@ export default function Header() {
             <li>
               <a
                 href={`tel:+${company.phoneIntl}`}
-                className="mt-2 block rounded-full bg-ink px-4 py-3 text-center font-body text-sm font-semibold text-parchment"
+                className="mt-2 block rounded-full bg-gold px-4 py-3 text-center font-body text-sm font-semibold text-ink"
               >
                 Call {company.phoneDisplay}
               </a>

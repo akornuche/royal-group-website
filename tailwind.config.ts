@@ -8,36 +8,36 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Deep loam soil — the base the whole ecosystem grows from
+        // Deep black — primary dark background
         soil: {
-          DEFAULT: "#26190F",
-          light: "#3A2818",
-          rim: "#4C3520",
+          DEFAULT: "#0A0A0A",
+          light: "#1A1A1A",
+          rim: "#2A2A2A",
         },
-        // Cassava-leaf green — primary, the crop itself
+        // Forest green — growth, agriculture, life
         leaf: {
-          DEFAULT: "#3F6B35",
-          dark: "#2A4A24",
-          light: "#6E9459",
+          DEFAULT: "#1E6B3A",
+          dark: "#145229",
+          light: "#2D9654",
         },
-        // Laterite clay — the red-brown soil of the Niger Delta, used for stamps & CTAs
+        // Gold — premium, harvest, CTAs
         clay: {
-          DEFAULT: "#9C4221",
-          dark: "#732F17",
-          light: "#C5623B",
+          DEFAULT: "#C9943A",
+          dark: "#A87A2E",
+          light: "#E8B655",
         },
-        // Harvest gold — grain, feed, cassava flour
+        // Bright gold — highlights and accents
         gold: {
-          DEFAULT: "#D9A441",
-          dark: "#B3822C",
-          light: "#EFCA85",
+          DEFAULT: "#D4AF37",
+          dark: "#B8961E",
+          light: "#F0D060",
         },
-        // Parchment — warm paper, not a pure cream; carries a slight green undertone
+        // Off-white — warm readable background
         parchment: {
-          DEFAULT: "#F1EEDF",
-          dim: "#E7E2CE",
+          DEFAULT: "#F8F6F0",
+          dim: "#EEEADE",
         },
-        ink: "#211A12",
+        ink: "#0A0A0A",
       },
       fontFamily: {
         display: ["var(--font-zilla)", "Georgia", "serif"],

@@ -12,7 +12,7 @@ export default function ChatBot() {
       {!isOpen && (
         <button
           onClick={() => setIsOpen(true)}
-          className="fixed bottom-32 right-5 z-40 flex items-center gap-2 rounded-full bg-clay px-4 py-3 text-sm font-semibold text-parchment shadow-lg hover:bg-clay-dark sm:bottom-40 sm:right-8"
+          className="fixed bottom-32 right-5 z-40 flex items-center gap-2 rounded-full bg-gold px-4 py-3 text-sm font-semibold text-ink shadow-lg hover:bg-gold-light sm:bottom-40 sm:right-8"
           aria-label="Open chat widget"
         >
           <span>💬 Chat</span>
@@ -23,14 +23,14 @@ export default function ChatBot() {
       {isOpen && (
         <div className="fixed bottom-5 right-5 z-40 w-96 max-w-[calc(100vw-2rem)] rounded-2xl border border-ink/10 bg-parchment shadow-2xl overflow-hidden flex flex-col sm:bottom-8 sm:right-8">
           {/* Header */}
-          <div className="bg-clay px-6 py-4 text-parchment flex items-center justify-between">
+          <div className="bg-ink border-b border-gold/30 px-6 py-4 text-parchment flex items-center justify-between">
             <div>
-              <h3 className="font-display text-lg font-bold">Royal Group</h3>
-              <p className="font-body text-xs text-parchment/80">Typically replies within minutes</p>
+              <h3 className="font-display text-lg font-bold text-gold">Royal Group</h3>
+              <p className="font-body text-xs text-parchment/60">Typically replies within minutes</p>
             </div>
             <button
               onClick={() => setIsOpen(false)}
-              className="text-parchment hover:bg-clay-dark rounded p-1"
+              className="text-parchment/60 hover:text-gold rounded p-1"
               aria-label="Close chat"
             >
               ✕
@@ -61,7 +61,7 @@ export default function ChatBot() {
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-left rounded-lg bg-soil text-parchment px-3 py-2 font-body text-sm hover:bg-soil/90 transition"
+                  className="text-left rounded-lg bg-ink text-parchment px-3 py-2 font-body text-sm hover:bg-leaf transition"
                 >
                   📊 Our Operations
                 </a>
@@ -71,7 +71,7 @@ export default function ChatBot() {
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-left rounded-lg bg-soil text-parchment px-3 py-2 font-body text-sm hover:bg-soil/90 transition"
+                  className="text-left rounded-lg bg-ink text-parchment px-3 py-2 font-body text-sm hover:bg-leaf transition"
                 >
                   🎓 Training Programs
                 </a>
@@ -81,13 +81,13 @@ export default function ChatBot() {
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-left rounded-lg bg-soil text-parchment px-3 py-2 font-body text-sm hover:bg-soil/90 transition"
+                  className="text-left rounded-lg bg-ink text-parchment px-3 py-2 font-body text-sm hover:bg-leaf transition"
                 >
                   🤝 Partnership Inquiry
                 </a>
                 <a
                   href={`tel:+${company.phoneIntl}`}
-                  className="text-left rounded-lg bg-soil text-parchment px-3 py-2 font-body text-sm hover:bg-soil/90 transition"
+                  className="text-left rounded-lg bg-gold text-ink px-3 py-2 font-body text-sm font-semibold hover:bg-gold-light transition"
                 >
                   ☎️ Call Us
                 </a>

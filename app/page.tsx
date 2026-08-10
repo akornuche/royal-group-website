@@ -6,15 +6,15 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="grain-bg relative overflow-hidden bg-soil px-6 pb-20 pt-8 text-parchment md:pb-28 md:pt-16">
+      <section className="grain-bg relative overflow-hidden bg-ink px-6 pb-20 pt-8 text-parchment md:pb-28 md:pt-16">
         <div className="mx-auto max-w-5xl">
-          <h1 className="mt-6 max-w-3xl font-display text-5xl font-bold leading-[1.03] md:text-7xl">
+          <h1 className="max-w-3xl font-display text-5xl font-bold leading-[1.03] md:text-7xl">
             From soil to shelf,
             <br />
-            one integrated enterprise.
+            <span className="text-gold">one integrated enterprise.</span>
           </h1>
 
-          <p className="mt-6 max-w-xl font-body text-lg leading-relaxed text-parchment/75 md:text-xl">
+          <p className="mt-6 max-w-xl font-body text-lg leading-relaxed text-parchment/70 md:text-xl">
             {company.name} runs the full agricultural value chain &mdash;
             livestock, aquaculture, cassava processing, cold storage and
             farmer training &mdash; under one roof in {company.hq}.
@@ -23,7 +23,7 @@ export default function Home() {
           <div className="mt-9 flex flex-wrap items-center gap-4">
             <Link
               href="/operations"
-              className="rounded-full bg-clay px-6 py-3 font-body text-sm font-semibold text-parchment transition-colors hover:bg-clay-dark"
+              className="rounded-full bg-gold px-6 py-3 font-body text-sm font-semibold text-ink transition-colors hover:bg-gold-light"
             >
               See our operations
             </Link>
@@ -31,7 +31,7 @@ export default function Home() {
               href={`https://wa.me/${company.phoneIntl}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full border border-parchment/30 px-6 py-3 font-body text-sm font-semibold text-parchment transition-colors hover:border-gold hover:text-gold"
+              className="rounded-full border border-leaf px-6 py-3 font-body text-sm font-semibold text-parchment transition-colors hover:bg-leaf hover:text-parchment"
             >
               Chat on WhatsApp
             </a>
@@ -39,10 +39,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Value chain signature */}
+      {/* Value chain */}
       <section className="px-6 py-16 md:py-24">
         <div className="mx-auto max-w-6xl">
-          <p className="font-mono text-xs uppercase tracking-widest text-clay">
+          <p className="font-mono text-xs uppercase tracking-widest text-gold">
             How it fits together
           </p>
           <h2 className="mt-3 max-w-2xl font-display text-3xl font-bold leading-tight text-ink md:text-4xl">
@@ -54,7 +54,6 @@ export default function Home() {
             store and move to market &mdash; with training that keeps the
             whole chain growing.
           </p>
-
           <div className="mt-10">
             <ValueChain />
           </div>
@@ -62,10 +61,10 @@ export default function Home() {
       </section>
 
       {/* Why Royal Group */}
-      <section className="bg-parchment-dim border-y border-ink/10 px-6 py-16 md:py-24">
+      <section className="border-y border-ink/10 bg-parchment-dim px-6 py-16 md:py-24">
         <div className="mx-auto grid max-w-6xl gap-12 md:grid-cols-[1fr_1.4fr]">
           <div>
-            <p className="font-mono text-xs uppercase tracking-widest text-clay">
+            <p className="font-mono text-xs uppercase tracking-widest text-gold">
               Why partners choose us
             </p>
             <h2 className="mt-3 font-display text-3xl font-bold leading-tight text-ink">
@@ -90,7 +89,7 @@ export default function Home() {
             <h2 className="max-w-md font-display text-3xl font-bold leading-tight">
               Let&apos;s grow something together.
             </h2>
-            <p className="mt-3 max-w-md font-body text-parchment/85">
+            <p className="mt-3 max-w-md font-body text-parchment/80">
               Government agencies, cooperatives, investors and off-takers &mdash;
               reach our team directly.
             </p>
@@ -98,13 +97,13 @@ export default function Home() {
           <div className="flex flex-wrap gap-4">
             <a
               href={`tel:+${company.phoneIntl}`}
-              className="rounded-full bg-parchment px-6 py-3 font-body text-sm font-semibold text-ink transition-colors hover:bg-gold"
+              className="rounded-full bg-gold px-6 py-3 font-body text-sm font-semibold text-ink transition-colors hover:bg-gold-light"
             >
               Call {company.phoneDisplay}
             </a>
             <Link
               href="/partnerships"
-              className="rounded-full border border-parchment/40 px-6 py-3 font-body text-sm font-semibold text-parchment transition-colors hover:border-parchment"
+              className="rounded-full border border-parchment/40 px-6 py-3 font-body text-sm font-semibold text-parchment transition-colors hover:border-gold hover:text-gold"
             >
               Partner with us
             </Link>

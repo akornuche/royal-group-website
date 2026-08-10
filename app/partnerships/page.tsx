@@ -27,7 +27,7 @@ export default function PartnershipsPage() {
             ))}
           </div>
 
-          <div className="mt-14 flex flex-col items-start justify-between gap-6 rounded-2xl bg-clay px-8 py-10 text-parchment md:flex-row md:items-center md:px-12">
+          <div className="mt-14 flex flex-col items-start justify-between gap-6 rounded-2xl bg-ink px-8 py-10 text-parchment md:flex-row md:items-center md:px-12">
             <div>
               <h2 className="font-display text-2xl font-bold">
                 Have a partnership proposal?
@@ -42,7 +42,7 @@ export default function PartnershipsPage() {
               )}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-parchment px-6 py-3 font-body text-sm font-semibold text-ink hover:bg-gold"
+              className="rounded-full bg-parchment px-6 py-3 font-body text-sm font-semibold text-ink hover:bg-gold-light"
             >
               Start on WhatsApp
             </a>

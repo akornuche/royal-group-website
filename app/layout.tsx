@@ -28,6 +28,11 @@ export const metadata: Metadata = {
   title: "Royal Group | Integrated Agro-Allied Enterprise, Delta State",
   description:
     "Royal Group is a Nigerian agro-allied enterprise integrating livestock, aquaculture, cassava processing, cold storage and agribusiness training — from farm to market.",
+  icons: {
+    icon: "/logo.jpeg",
+    apple: "/logo.jpeg",
+    shortcut: "/logo.jpeg",
+  },
 };
 
 export default function RootLayout({
@@ -37,16 +42,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${zilla.variable} ${work.variable} ${plexMono.variable}`}>
-      <head>
-        {/* Chatbot Integration Ready:
-            The custom ChatBot component below provides a functional chat widget.
-            For production with AI chatbot capabilities, integrate:
-            - Tidio (tidio.co) - Add script with real account ID
-            - Botpress (botpress.com) - Add webchat script
-            - Custom AI via OpenAI/Anthropic
-            Current setup uses WhatsApp integration as the backend.
-        */}
-      </head>
       <body className="font-body">
         <Header />
         <main>{children}</main>

@@ -45,7 +45,7 @@ export default function ContactPage() {
 
             <a
               href={`tel:+${company.phoneIntl}`}
-              className="flex items-center gap-4 rounded-2xl border border-ink/10 p-6 transition-colors hover:border-clay"
+              className="flex items-center gap-4 rounded-2xl border border-gold/20 p-6 transition-colors hover:border-gold"
             >
               <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-ink/5 text-ink">
                 <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth={2}>
@@ -58,7 +58,7 @@ export default function ContactPage() {
               </span>
             </a>
 
-            <div className="rounded-2xl border border-ink/10 p-6">
+            <div className="rounded-2xl border border-gold/20 p-6">
               <p className="font-display text-lg font-semibold text-ink">Follow us</p>
               <ul className="mt-3 flex flex-wrap gap-3">
                 {socials
@@ -69,7 +69,7 @@ export default function ContactPage() {
                         href={s.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="rounded-full border border-ink/15 px-4 py-1.5 font-body text-sm text-ink/80 hover:border-clay hover:text-clay"
+                        className="rounded-full border border-ink/15 px-4 py-1.5 font-body text-sm text-ink/80 hover:border-gold hover:text-gold"
                       >
                         {s.label}
                       </a>
@@ -81,13 +81,13 @@ export default function ContactPage() {
               </p>
             </div>
 
-            <div className="rounded-2xl border border-ink/10 p-6">
+            <div className="rounded-2xl border border-gold/20 p-6">
               <p className="font-display text-lg font-semibold text-ink">Head office</p>
               <p className="mt-2 font-body text-sm text-ink/70">{company.hq}</p>
             </div>
           </div>
 
-          <div className="rounded-2xl border border-ink/10 p-8">
+          <div className="rounded-2xl border border-gold/20 p-8">
             <p className="font-display text-lg font-semibold text-ink">Send a message</p>
             <p className="mt-1 font-body text-sm text-ink/60">
               We&apos;ll get back to you by email or WhatsApp.

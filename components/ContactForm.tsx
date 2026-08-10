@@ -32,7 +32,7 @@ export default function ContactForm() {
           id="name"
           name="name"
           required
-          className="rounded-lg border border-ink/20 bg-parchment px-4 py-3 font-body text-sm text-ink outline-none focus:border-leaf"
+          className="rounded-lg border border-ink/20 bg-parchment px-4 py-3 font-body text-sm text-ink outline-none focus:border-gold"
         />
       </div>
       <div className="grid gap-1.5">
@@ -44,7 +44,7 @@ export default function ContactForm() {
           name="email"
           type="email"
           required
-          className="rounded-lg border border-ink/20 bg-parchment px-4 py-3 font-body text-sm text-ink outline-none focus:border-leaf"
+          className="rounded-lg border border-ink/20 bg-parchment px-4 py-3 font-body text-sm text-ink outline-none focus:border-gold"
         />
       </div>
       <div className="grid gap-1.5">
@@ -56,12 +56,12 @@ export default function ContactForm() {
           name="message"
           required
           rows={4}
-          className="rounded-lg border border-ink/20 bg-parchment px-4 py-3 font-body text-sm text-ink outline-none focus:border-leaf"
+          className="rounded-lg border border-ink/20 bg-parchment px-4 py-3 font-body text-sm text-ink outline-none focus:border-gold"
         />
       </div>
       <button
         type="submit"
-        className="justify-self-start rounded-full bg-ink px-6 py-3 font-body text-sm font-semibold text-parchment hover:bg-clay"
+        className="justify-self-start rounded-full bg-ink px-6 py-3 font-body text-sm font-semibold text-parchment hover:bg-gold"
       >
         Send message
       </button>

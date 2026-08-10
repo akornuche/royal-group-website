@@ -24,7 +24,7 @@ export default function OperationsPage() {
             return (
               <div key={stage}>
                 <div className="flex items-baseline gap-3 border-b border-ink/15 pb-4">
-                  <span className="font-mono text-sm text-clay">
+                  <span className="font-mono text-sm text-gold">
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <h2 className="font-display text-2xl font-bold text-ink md:text-3xl">
@@ -35,7 +35,7 @@ export default function OperationsPage() {
                   {items.map((op) => (
                     <div
                       key={op.slug}
-                      className="rounded-2xl border border-ink/10 p-6 transition-colors hover:border-leaf"
+                      className="rounded-2xl border border-gold/20 p-6 transition-colors hover:border-gold"
                     >
                       <h3 className="font-display text-lg font-semibold text-ink">
                         {op.title}

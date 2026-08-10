@@ -12,7 +12,7 @@ export default function WhatsAppButton() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat with Royal Group on WhatsApp"
-      className="group fixed bottom-5 right-5 z-50 flex items-center gap-3 rounded-full bg-leaf py-3 pl-3 pr-4 text-parchment shadow-lg shadow-soil/30 transition-all hover:pr-5 hover:bg-leaf-dark sm:bottom-8 sm:right-8"
+      className="group fixed bottom-5 right-5 z-50 flex items-center gap-3 rounded-full bg-leaf py-3 pl-3 pr-4 text-parchment shadow-lg shadow-ink/40 transition-all hover:pr-5 hover:bg-leaf-dark sm:bottom-8 sm:right-8"
     >
       <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-parchment text-leaf">
         <svg
