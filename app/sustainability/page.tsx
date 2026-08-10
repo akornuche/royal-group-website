@@ -50,7 +50,7 @@ export default function SustainabilityPage() {
         <div className="mx-auto max-w-6xl">
           <div className="relative h-80 overflow-hidden rounded-2xl border border-gold/20 shadow-lg">
             <Image
-              src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=1200&h=600&fit=crop"
+              src="/sustainability.jpg"
               alt="Sustainable green farm landscape"
               fill
               className="object-cover"
