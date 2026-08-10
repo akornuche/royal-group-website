@@ -23,9 +23,9 @@ export default function ChatBot() {
       {isOpen && (
         <div className="fixed bottom-5 right-5 z-40 w-96 max-w-[calc(100vw-2rem)] rounded-2xl border border-ink/10 bg-parchment shadow-2xl overflow-hidden flex flex-col sm:bottom-8 sm:right-8">
           {/* Header */}
-          <div className="bg-ink border-b border-gold/30 px-6 py-4 text-parchment flex items-center justify-between">
+          <div className="bg-leaf border-b border-gold/30 px-6 py-4 text-parchment flex items-center justify-between">
             <div>
-              <h3 className="font-display text-lg font-bold text-gold">Royal Group</h3>
+              <h3 className="font-display text-lg font-bold text-gold-light">Royal Group</h3>
               <p className="font-body text-xs text-parchment/60">Typically replies within minutes</p>
             </div>
             <button

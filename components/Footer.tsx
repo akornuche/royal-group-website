@@ -4,7 +4,7 @@ import { company, socials } from "@/lib/content";
 
 export default function Footer() {
   return (
-    <footer className="grain-bg bg-ink text-parchment">
+    <footer className="grain-bg bg-leaf text-parchment">
       <div className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid gap-12 md:grid-cols-[1.3fr_1fr_1fr]">
 
@@ -28,7 +28,7 @@ export default function Footer() {
 
           {/* Site Links */}
           <div>
-            <p className="font-mono text-xs uppercase tracking-widest text-gold">Site</p>
+            <p className="font-mono text-xs uppercase tracking-widest text-gold-light">Site</p>
             <ul className="mt-4 space-y-2 font-body text-sm text-parchment/70">
               <li><Link href="/about" className="hover:text-gold transition-colors">About Us</Link></li>
               <li><Link href="/operations" className="hover:text-gold transition-colors">Our Operations</Link></li>
@@ -40,7 +40,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <p className="font-mono text-xs uppercase tracking-widest text-gold">Reach us</p>
+            <p className="font-mono text-xs uppercase tracking-widest text-gold-light">Reach us</p>
             <ul className="mt-4 space-y-2 font-body text-sm text-parchment/70">
               <li>
                 <a href={`tel:+${company.phoneIntl}`} className="hover:text-gold transition-colors">

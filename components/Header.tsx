@@ -19,7 +19,7 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-gold/20 bg-ink/95 backdrop-blur">
+    <header className="sticky top-0 z-40 border-b border-gold/30 bg-leaf/95 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
 
         {/* Logo */}

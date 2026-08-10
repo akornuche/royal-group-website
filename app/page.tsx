@@ -6,12 +6,12 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="grain-bg relative overflow-hidden bg-ink px-6 pb-20 pt-8 text-parchment md:pb-28 md:pt-16">
+      <section className="grain-bg relative overflow-hidden bg-leaf px-6 pb-20 pt-8 text-parchment md:pb-28 md:pt-16">
         <div className="mx-auto max-w-5xl">
           <h1 className="max-w-3xl font-display text-5xl font-bold leading-[1.03] md:text-7xl">
             From soil to shelf,
             <br />
-            <span className="text-gold">one integrated enterprise.</span>
+            <span className="text-gold-light">one integrated enterprise.</span>
           </h1>
 
           <p className="mt-6 max-w-xl font-body text-lg leading-relaxed text-parchment/70 md:text-xl">
@@ -31,7 +31,7 @@ export default function Home() {
               href={`https://wa.me/${company.phoneIntl}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full border border-leaf px-6 py-3 font-body text-sm font-semibold text-parchment transition-colors hover:bg-leaf hover:text-parchment"
+              className="rounded-full border border-gold px-6 py-3 font-body text-sm font-semibold text-parchment transition-colors hover:bg-gold hover:text-ink"
             >
               Chat on WhatsApp
             </a>
@@ -103,7 +103,7 @@ export default function Home() {
             </a>
             <Link
               href="/partnerships"
-              className="rounded-full border border-parchment/40 px-6 py-3 font-body text-sm font-semibold text-parchment transition-colors hover:border-gold hover:text-gold"
+              className="rounded-full border border-parchment/40 px-6 py-3 font-body text-sm font-semibold text-parchment transition-colors hover:border-gold-light hover:text-gold-light"
             >
               Partner with us
             </Link>

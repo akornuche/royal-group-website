@@ -8,29 +8,29 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Deep black — primary dark background
+        // Deep black — dark accents and text
         soil: {
           DEFAULT: "#0A0A0A",
           light: "#1A1A1A",
           rim: "#2A2A2A",
         },
-        // Forest green — growth, agriculture, life
+        // Rich forest green — dominant primary color
         leaf: {
-          DEFAULT: "#1E6B3A",
-          dark: "#145229",
-          light: "#2D9654",
+          DEFAULT: "#1B7A3D",
+          dark: "#0F4A23",
+          light: "#2FA555",
         },
-        // Gold — premium, harvest, CTAs
+        // Gold — accents and highlights
         clay: {
-          DEFAULT: "#C9943A",
-          dark: "#A87A2E",
-          light: "#E8B655",
-        },
-        // Bright gold — highlights and accents
-        gold: {
           DEFAULT: "#D4AF37",
           dark: "#B8961E",
-          light: "#F0D060",
+          light: "#E8C547",
+        },
+        // Bright gold — CTAs and emphasis
+        gold: {
+          DEFAULT: "#E8D460",
+          dark: "#D4AF37",
+          light: "#F4E8A8",
         },
         // Off-white — warm readable background
         parchment: {

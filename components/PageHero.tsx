@@ -8,7 +8,7 @@ export default function PageHero({
   intro: string;
 }) {
   return (
-    <section className="grain-bg border-b border-gold/20 bg-ink px-6 py-16 text-parchment md:py-24">
+    <section className="grain-bg border-b border-gold/20 bg-leaf px-6 py-16 text-parchment md:py-24">
       <div className="mx-auto max-w-4xl">
         <p className="font-mono text-xs uppercase tracking-[0.2em] text-gold">
           {eyebrow}
