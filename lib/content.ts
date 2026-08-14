@@ -7,8 +7,8 @@ export const company = {
   founded: "2020",
   hq: "Umunede, Delta State, Nigeria",
   tagline: "Nigeria's integrated agro-allied enterprise",
-  phoneDisplay: "0807 243 8582",
-  phoneIntl: "2348072438582", // used for wa.me and tel: links
+  phoneDisplay: "+234 916 410 7658",
+  phoneIntl: "2349164107658", // used for wa.me and tel: links
 };
 
 // TODO: replace "#" with your live profile URLs.
