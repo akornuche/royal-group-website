@@ -2,57 +2,57 @@ import Image from "next/image";
 
 const GALLERY = [
   {
-    title: "Poultry Production",
-    image: "/poultry.jpg",
-    alt: "Chickens in a modern poultry farm",
+    image: "/broilers.jpeg",
+    alt: "Broiler chickens",
   },
   {
-    title: "Fish Farming",
-    image: "/fish-farming.jpg",
-    alt: "Commercial aquaculture fish farming",
+    image: "/broilers2.jpeg",
+    alt: "Broiler operation",
   },
   {
-    title: "Livestock",
-    image: "/livestock.jpg",
-    alt: "Cattle grazing on green pasture",
+    image: "/layers.jpeg",
+    alt: "Layer chickens",
   },
   {
-    title: "Cassava Processing",
-    image: "/cassava.jpg",
-    alt: "Cassava crop and processing",
+    image: "/piggery.jpeg",
+    alt: "Piggery operation",
   },
   {
-    title: "Cold Storage",
-    image: "/cold-storage.jpg",
-    alt: "Modern cold storage facility",
+    image: "/piglets.jpeg",
+    alt: "Piglets",
   },
   {
-    title: "Training Programs",
-    image: "/training.jpg",
-    alt: "Farmers in agricultural training",
+    image: "/pigs.jpeg",
+    alt: "Pigs",
+  },
+  {
+    image: "/poultry.jpeg",
+    alt: "Poultry farm",
+  },
+  {
+    image: "/storehouse.jpeg",
+    alt: "Storage facility",
+  },
+  {
+    image: "/turkey.jpeg",
+    alt: "Turkey farm",
   },
 ];
 
 export default function OperationsGallery() {
   return (
     <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-      {GALLERY.map((op) => (
+      {GALLERY.map((item, idx) => (
         <div
-          key={op.title}
-          className="group relative h-52 overflow-hidden rounded-2xl border border-gold/20 shadow-md transition-all hover:shadow-xl hover:border-gold/60"
+          key={idx}
+          className="group relative h-64 overflow-hidden rounded-2xl border border-gold/20 shadow-md transition-all hover:shadow-xl hover:border-gold/60"
         >
           <Image
-            src={op.image}
-            alt={op.alt}
+            src={item.image}
+            alt={item.alt}
             fill
             className="object-cover transition-transform duration-500 group-hover:scale-110"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/20 to-transparent" />
-          <div className="absolute bottom-0 left-0 right-0 p-4">
-            <h3 className="font-display text-base font-semibold text-parchment">
-              {op.title}
-            </h3>
-          </div>
         </div>
       ))}
     </div>

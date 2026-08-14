@@ -43,7 +43,7 @@ export default function TrainingPage() {
         eyebrow="Agro Innovation & Training"
         title="Building the next generation of agripreneurs."
         intro="We provide practical training programmes for youths, farmers, cooperatives and agricultural stakeholders — transferring the same knowledge that runs our own integrated operations."
-        image="/training.jpg"
+        image="/layers.jpeg"
       />
 
       <section className="px-6 py-16 md:py-24">

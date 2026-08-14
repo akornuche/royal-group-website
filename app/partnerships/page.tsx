@@ -15,7 +15,7 @@ export default function PartnershipsPage() {
         eyebrow="Partnerships"
         title="Collaborations that scale the whole value chain."
         intro="These partnerships are designed to expand agricultural production, strengthen value chains, promote innovation, improve farmer livelihoods, and accelerate agro-industrial development."
-        image="/cold-storage.jpg"
+        image="/storehouse.jpeg"
       />
 
       <section className="px-6 py-16 md:py-24">

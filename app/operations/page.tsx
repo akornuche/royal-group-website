@@ -16,7 +16,7 @@ export default function OperationsPage() {
         eyebrow="Our Operations"
         title="Eleven operations. One value chain."
         intro="Each business line is built to feed the next — from the inputs we raise ourselves through to the training that grows the next generation of agripreneurs."
-        image="/poultry.jpg"
+        image="/poultry.jpeg"
       />
 
       {/* Gallery */}

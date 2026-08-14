@@ -15,7 +15,7 @@ export default function ContactPage() {
         eyebrow="Contact"
         title="Talk to our team."
         intro="The fastest way to reach us is WhatsApp. For everything else, call or send a message below."
-        image="/fish-farming.jpg"
+        image="/broilers.jpeg"
       />
 
       <section className="px-6 py-16 md:py-24">

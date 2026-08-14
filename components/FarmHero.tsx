@@ -4,8 +4,8 @@ export default function FarmHero() {
   return (
     <div className="relative h-80 w-full overflow-hidden rounded-2xl lg:h-96">
       <Image
-        src="/imagesfarm.jpg"
-        alt="Royal Group farm — green fields and integrated agricultural operations"
+        src="/landscape.jpeg"
+        alt="Royal Group farm landscape"
         fill
         className="object-cover"
         priority
